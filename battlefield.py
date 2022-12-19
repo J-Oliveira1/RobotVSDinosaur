@@ -16,8 +16,14 @@ class Battlefield:
         print("welcome all to the battle of champions!\nWhere only one will survive!\nSit back and enjoy this battle!")
     
     def battle_phase(self):
-        self.dinosaur.attack
-        self.robot.attack
+        while self.robot.is_alive() and self.dinosaur.is_alive():
+            self.robot.attack(self.dinosaur)
+            self.dinosaur.attack(self.robot)
+
     
     def display_winner(self):
-        pass
+        if self.robot.health > 0:
+            print("Dino won.")
+        elif self.dinosaur.health > 0:
+            print("Robo won.")
+            pass
