@@ -8,6 +8,6 @@ class Dinosaur:
     def attack(self, robot,):
         robot.health -= self.attack_power 
         print(f"{robot.name} {robot.health}")
-
+       
     def is_alive(self):
         return self.health > 0
