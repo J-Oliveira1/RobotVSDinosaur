@@ -15,7 +15,7 @@ class Battlefield:
     
     def display_welcome(self):
         print(" ")
-        print("welcome all to the battle of champions!\nWhere only one will survive!\nSit back and enjoy this battle!")
+        print("welcome all to the battle of the ages!\nWhere technology takes on a prehistoric giant!\nSit back and enjoy this battle!")
         
 
     def battle_phase(self):
@@ -26,7 +26,9 @@ class Battlefield:
     
     def display_winner(self):
         if self.dinosaur.health >= 0:
-            print(f"robo")
+            print(f"With that final blow {self.robot.name} claims this victory!\nSending {self.dinosaur.name} back into extinction!!")
+            print(" ")
         elif self.robot.health >= 0:
-            print(f'dino')
+            print(f'With that final blow {self.dinosaur.name} wins!/nProving technology is not always ontop!')
+            print(" ")
             pass
