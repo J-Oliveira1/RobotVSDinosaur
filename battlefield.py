@@ -1,6 +1,7 @@
 from dinosaur import Dinosaur
 from robot import Robot
 
+
 class Battlefield:
     def __init__(self) -> None:
         self.robot = Robot("Jaegar")
@@ -15,7 +16,7 @@ class Battlefield:
     
     def display_welcome(self):
         print(" ")
-        print("welcome all to the battle of the ages!\nWhere technology takes on a prehistoric giant!\nSit back and enjoy this battle!")
+        print("Welcome all to the battle of the ages!\nWhere technology takes on a prehistoric giant!\nSit back and enjoy this battle!")
         
 
     def battle_phase(self):
